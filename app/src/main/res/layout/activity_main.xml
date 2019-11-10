@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="#f9f5f5"
+android:orientation="vertical">
+
+<!--标题栏：车辆基本信息!-->
+<LinearLayout
+    android:id="@+id/cheliangjibenxinxi"
+    android:layout_alignParentTop="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginLeft="6px"
+    android:layout_marginTop="16px"
+    android:text="车辆基本信息"
+    android:textColor="#000000"
+    android:textSize="65px"
+    android:textStyle="bold"/>
+</LinearLayout>
+
+<!--内容栏：车辆信息参数!-->
+<LinearLayout
+    android:id="@+id/cheliangxinxicanshu"
+    android:layout_width="match_parent"
+    android:layout_height="200px"
+    android:layout_marginTop="30px"
+    android:orientation="horizontal">
+    <!--内容填写：项目编号!-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/xiangmubianhao"
+            android:layout_width="90px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="3px"
+            android:text="项目编号"
+            android:textColor="#000"
+            android:textSize="35px"/>
+        <EditText
+            android:layout_width="180px"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/xiangmubianhao"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="3px"
+            android:textSize="35px"
+            android:textColor="#000"/>
+    </RelativeLayout>
+    <!--内容填写：车辆编号!-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/cheliangbianhao"
+            android:layout_width="90px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="3px"
+            android:text="车辆编号"
+            android:textColor="#000"
+            android:textSize="35px"/>
+        <EditText
+            android:layout_width="180px"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/cheliangbianhao"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="3px"
+            android:textSize="35px"
+            android:textColor="#000"/>
+    </RelativeLayout>
+    <!--内容填写：测试地点!-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/ceshididian"
+            android:layout_width="90px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="3px"
+            android:text="测试地点"
+            android:textColor="#000"
+            android:textSize="35px"/>
+        <EditText
+            android:layout_width="180px"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/ceshididian"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="3px"
+            android:textSize="18px"
+            android:textColor="#000"/>
+    </RelativeLayout>
+    <!--内容填写：驾驶员姓名!-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/jiashiyuanxingming"
+            android:layout_width="120px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="3px"
+            android:text="驾驶员姓名"
+            android:textColor="#000"
+            android:textSize="35px"/>
+        <EditText
+            android:layout_width="180px"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/jiashiyuanxingming"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="3px"
+            android:textSize="35px"
+            android:textColor="#000"/>
+    </RelativeLayout>
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200px"
+    android:orientation="horizontal">
+    <!--内容填写：发动机!-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/fadongji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="3px"
+            android:text="发动机"
+            android:textColor="#000"
+            android:textSize="35px"/>
+        <EditText
+            android:layout_width="180px"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fadongji"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="3px"
+            android:textSize="35px"
+            android:textColor="#000"/>
+    </RelativeLayout>
+    <!--内容填写：助力器!-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/zhuliqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="3px"
+            android:text="助力器"
+            android:textColor="#000"
+            android:textSize="35px"/>
+        <EditText
+            android:layout_width="180px"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/zhuliqi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="3px"
+            android:textSize="35px"
+            android:textColor="#000"/>
+    </RelativeLayout>
+    <!--内容填写：变速器!-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/biansuqi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="3px"
+            android:text="变速器"
+            android:textColor="#000"
+            android:textSize="35px"/>
+        <EditText
+            android:layout_width="180px"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/biansuqi"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="3px"
+            android:textSize="35px"
+            android:textColor="#000"/>
+    </RelativeLayout>
+    <!--内容填写：轮胎尺寸!-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100px"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/luntaichicun"
+            android:layout_width="100px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="3px"
+            android:text="轮胎尺寸"
+            android:textColor="#000"
+            android:textSize="35px"/>
+        <EditText
+            android:layout_width="180px"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/luntaichicun"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="3px"
+            android:textSize="35px"
+            android:textColor="#000"/>
+    </RelativeLayout>
+</LinearLayout>
+
+<!--选择栏：测试规范选择!-->
+<LinearLayout
+    android:id="@+id/ceshiguifan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="0px"
+        android:layout_height="90px"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/ceshiguifanxuanze"
+            android:layout_width="wrap_content"
+            android:layout_height="79px"
+            android:layout_marginLeft="100px"
+            android:layout_marginTop="20px"
+            android:text="测试规范选择"
+            android:textColor="#000000"
+            android:textSize="45px"
+            android:textStyle="bold" />
+        <Spinner
+            android:id="@+id/spinner_simple"
+            android:layout_width="750px"
+            android:layout_height="90px"
+            android:layout_marginRight="23dp"
+            android:background="@android:color/darker_gray"
+            android:entries="@array/study_view_spinner_values"
+            android:layout_marginEnd="23dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="1500px">
+<!--正文栏：测试目的、安全注意事项、操作步骤!-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="50px"
+    android:orientation="vertical">
+
+    <!--实验目的-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ceshiguifan"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="10px"
+            android:text="试验目的"
+            android:textColor="#000000"
+            android:textSize="60px"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="20px"
+            android:lineSpacingExtra="15px"
+            android:text="此规范用于测量车辆在当前附着条件下，在给定车速达到最大侧向加速度时，对应方向盘转角"
+            android:textColor="#000000"
+            android:textSize="45px" />
+    </LinearLayout>
+
+    <!--安全注意事项!-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="40px"
+            android:text="安全注意事项"
+            android:textColor="#000000"
+            android:textSize="60px"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="20px"
+            android:text="在有足够安全余量的场地进行，平稳加速，逐渐增大方向盘转向，避免剧烈输入"
+            android:textColor="#000000"
+            android:textSize="45px" />
+    </LinearLayout>
+
+    <!--操作步骤!-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60px"
+            android:gravity="center"
+            android:text="操作步骤"
+            android:textColor="#000000"
+            android:textSize="60px"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="30px"
+            android:text="Step1：加速至给定的测试车速+5kph，并稳住"
+            android:textColor="#000000"
+            android:textSize="45px" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="30px"
+            android:text="Step2：逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度逐渐增大方向盘转角，并查看设备上显示的侧向加速度"
+            android:textColor="#000000"
+            android:textSize="45px" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="30px"
+            android:text="Step3：当车辆侧向加速不再继续增加或车辆即将失衡时，减小方向盘或降低车速"
+            android:lineSpacingExtra="15px"
+            android:textColor="#000000"
+            android:textSize="45px" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6px"
+            android:layout_marginTop="30px"
+            android:text="Step4：向左输入方向和向右输入各做两次，计算平均值"
+            android:textColor="#000000"
+            android:textSize="45px" />
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+
+<!--跳转按钮：下一步!-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="300px"
+        android:layout_height="130px"
+        android:layout_gravity="right"
+        android:layout_marginRight="80px"
+        android:layout_marginTop="20px"
+        android:background="@drawable/next_btn"
+        android:onClick="OnNext"
+        android:text="下一步"
+        android:textColor="#000000"
+        android:textSize="45px" />
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">ABStest</string>
+    <string-array name="study_view_spinner_values">
+        <item>ABS分离路面制动偏航响应</item>
+        <item>ABS效率与减速均匀性</item>
+        <item>ABS直线制动偏航响应</item>
+        <item>ABS转换响应</item>
+        <item>ESC冰雪路面测试</item>
+        <item>ESC高速测试</item>
+        <item>ESC沥青路面测试</item>
+        <item>转弯制动</item>
+        <item>转向测试</item>
+    </string-array>
+
+    <string name="title_activity_main1">MainActivity1</string>
+        <string name="daohang_activity_main1">底盘控制性能试验可视化系统终端</string><!--导航-->
+        <string name="biaoti_activity_main1">底盘控制性能试验可视化系统</string><!--标题-->
+        <string name="car_activity_main1">车辆型号:</string><!--车辆型号-->
+        <string name="project_activity_main1">项目编号:</string><!--项目编号-->
+        <string name="driver_activity_main1">驾驶员姓名:</string><!--驾驶员-->
+        <string name="engineer_activity_main1">发动机:</string><!--发动机-->
+        <string name="gooster_activity_main1">制动助力器:</string><!--助力器-->
+        <string name="gearbox_activity_main1">变速箱:</string><!--变速箱-->
+        <string name="tyre_activity_main1">轮胎尺寸:</string><!--轮胎尺寸-->
+        <string name="place_activity_main1">测试地点:</string><!--测试规范-->
+        <string name="date_activity_main1">测试日期:</string><!--测试时间-->
+        <string name="rule_activity_main1">测试规范:</string><!--测试规范-->
+        <string name="readbutton_activity_main1">阅读操作指导</string><!--阅读按钮-->
+        <!--车辆型号1-->
+        <string-array name="carBrand_array">
+            <item>K-car</item>
+            <item>GEM</item>
+            <item>Alpha</item>
+        </string-array>
+        <!--车辆型号2-->
+        <string-array name="carBrand_num">
+            <item>215</item>
+            <item>218</item>
+            <item>228</item>
+            <item>229</item>
+            <item>256</item>
+            <item>358</item>
+        </string-array>
+    <!--测试地点-->
+    <string-array name="place">
+        <item>GDPG</item>
+        <item>HHPG</item>
+        <item>HNPG</item>
+        <item>BJPG</item>
+        <item>XJPG</item>
+        <item>PATAC</item>
+    </string-array>
+    <!--测试年份-->
+    <string-array name="year">
+        <item>2019</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+    </string-array>
+    <!--测试月份-->
+    <string-array name="month">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <!--测试日-->
+    <string-array name="day">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>26</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <!--测试规范1-->
+    <string-array name="testtype">
+        <item>ABS</item>
+        <item>TCS</item>
+        <item>ESC</item>
+    </string-array>
+    <!--测试规范2-->
+    <string-array name="testname">
+        <item>GMW14920	ABS/直线制动横摆响应</item>
+        <item>GMW15050	ABS/效率和减速度均一性</item>
+        <item>GMW15051	TCS/弯中加速</item>
+        <item>GMW15052	ABS/弯中制动</item>
+        <item>GMW15053	ABS/分离路面制动横摆响应</item>
+        <item>GMW15123	TCS/系统直线性能</item>
+        <item>GMW15124	ESC/干沥青路面80kph双变线</item>
+        <item>GMW15125	ESC/冰面50kph双变线</item>
+        <item>GMW15126	ESC/雪面70kph双变线</item>
+        <item>GMW15209	ABS/制动时转向</item>
+        <item>GMW15341	ABS/制动辅助系统性能</item>
+        <item>GMW15417	ABS/对接路面制动响应时间</item>
+        <item>GMW14556	ESC/麋鹿测试</item>
+        <item>GMW15376	ESC/斜坡脉冲转向最大Ay测定</item>
+        <item>GMW15452	ESC/ABS制动的干沥青单变线110KPH</item>
+        <item>GMW15453	ESC/ABS制动的冰面单变线70khp</item>
+        <item>GMW15454	ESC/ABS制动的雪面单变线100KPH</item>
+        <item>GMW15455	ESC/电子稳定程序 高速试验</item>
+        <item>GMW15456	TCS/发动机拖滞控制-直线快松油门</item>
+        <item>GMW15457	TCS/发动机拖滞控制-弯中快松油门</item>
+        <item>GMW15254	ESC/鱼钩测试</item>
+        <item>GMW15534	ESC/停滞正弦测试</item>
+    </string-array>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
